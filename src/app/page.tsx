@@ -1,3 +1,5 @@
+import AboutComponent from "./components/about-component";
+import ExperienceComponent from "./components/experience-component";
 import FooterComponent from "./components/footer-component";
 import NavbarComponent from "./components/navbar-component";
 import WelcomeComponent from "./components/welcome-component";
@@ -12,6 +14,8 @@ export default function Home() {
                 </header>
                 <main className="main-container">
                     <WelcomeComponent />
+                    <AboutComponent />
+                    <ExperienceComponent />
                 </main>
                 <footer className="footer-container">
                     <FooterComponent />

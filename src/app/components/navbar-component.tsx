@@ -8,7 +8,7 @@ export default function NavbarComponent( ) {
     return (
         <div>
             <div className="navbar-container">
-                <div className="location-container">
+                <div>
                     <p>Based in</p>
                     <p>London, United Kingdom</p>
                 </div>
