@@ -159,6 +159,16 @@ h4 {
     cursor: pointer;
 }
 
+.w-fit-content {
+    width: fit-content;
+}
+
+.link-w-icon {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
 .paragraphs-container {
     & p {
         padding-bottom: 2rem;
@@ -191,6 +201,17 @@ h4 {
     & p:first-of-type {
         color: var(--secondary);
     }
+}
+
+.links-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.about-role-container {
+    padding-bottom: 2rem;
 }
 
 .header-container {

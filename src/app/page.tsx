@@ -2,6 +2,7 @@ import AboutComponent from "./components/about-component";
 import ExperienceComponent from "./components/experience-component";
 import FooterComponent from "./components/footer-component";
 import NavbarComponent from "./components/navbar-component";
+import ProjectsComponent from "./components/projects-component";
 import WelcomeComponent from "./components/welcome-component";
 import { MenuProvider } from "./context/MenuContext";
 
@@ -16,6 +17,7 @@ export default function Home() {
                     <WelcomeComponent />
                     <AboutComponent />
                     <ExperienceComponent />
+                    <ProjectsComponent />
                 </main>
                 <footer className="footer-container">
                     <FooterComponent />
