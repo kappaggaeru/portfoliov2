@@ -14,24 +14,16 @@
     --foreground: #171717; */
 }
 
-[data-theme="dark"] {
-    --font-color: #eee;
-    --background-color: #333;
-    --link-color: lightblue;
-}
-
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
+        --background: #1f2023;
+        --foreground: #dadada;
     }
 }
 
 body {
     background-color: var(--background-color);
     color: var(--font-color);
-    /* color: var(--foreground);
-    background: var(--background); */
     font-family: Helvetica, Arial, sans-serif;
 }
 

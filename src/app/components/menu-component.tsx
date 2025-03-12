@@ -1,7 +1,7 @@
 import { useMenu } from "../context/MenuContext";
+import ToggleModeButton from "./toogle-mode-button-component";
 
 export default function MenuComponent() {
-
     const { toggleMenu } = useMenu();
 
     function CloseMenuButton() {
@@ -30,10 +30,7 @@ export default function MenuComponent() {
                     <p>Say hello</p>
                     <p>privet.dev@pm.me</p>
                 </div>
-                <div className="footer-menu-item button-link">
-                    <p>Switch to</p>
-                    <p>dark mode</p>
-                </div>
+                <ToggleModeButton />
             </div>
         )
     }
