@@ -3,9 +3,9 @@ import { Experience } from "@/app/models/experience-model";
 
 export default function ExperienceCardComponent({ experience }: { experience: Experience }) {
 
-    const experienceParagraphs = experience.responsabilities.map(experience =>
-        <p key={experience.id}>
-            {experience.title}
+    const experienceParagraphs = experience.responsabilities.map((experience, index) =>
+        <p key={index}>
+            {experience}
         </p>
     );
 

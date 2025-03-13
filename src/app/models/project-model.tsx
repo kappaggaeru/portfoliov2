@@ -1,10 +1,14 @@
-import { ListChild } from "./responsability-model";
 
 export interface Project {
     title: string;
-    skills: ListChild [];
+    skills: string [];
     year: string;
-    images: ListChild [];
-    paragraphs: ListChild [];
+    images: Image [];
+    paragraphs: string [];
     website: string;
+}
+
+export interface Image {
+    src: string;
+    alt: string;
 }

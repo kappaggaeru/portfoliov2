@@ -1,10 +1,9 @@
-import { ListChild } from "./responsability-model";
 
 export interface Experience {
     company: string;
     subtitle: string;
     time: string;
-    responsabilities: ListChild [];
+    responsabilities: string [];
     position: string;
     location: string;
     industry: string;

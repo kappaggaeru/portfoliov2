@@ -1,18 +1,24 @@
 import { Project } from "@/app/models/project-model";
 
-export default function ProjectCardComponent ({ project }: { project: Project}) {
+export default function ProjectCardComponent({ project }: { project: Project }) {
 
-    const skillsParagraphs = project.skills.map(skill =>
-        <span key={skill.id}>{skill.title}, </span>
+    const skillsParagraphs = project.skills.map((skill, index) =>
+        <span key={index}>
+            {skill}
+            {index < project.skills.length - 1 && ', '}
+        </span>
     );
 
     return (
         <div>
             <h4>{project.title}</h4>
-            <div>
+            <div className="experience-subtitle-container">
                 <p>{skillsParagraphs}</p>
+                <p>{project.year}</p>
             </div>
-            <p>{project.year}</p>
+            <div className="project-image-container">
+                <img src={project.images[0].src} alt={project.images[0].alt}></img>
+            </div>
         </div>
     );
 }

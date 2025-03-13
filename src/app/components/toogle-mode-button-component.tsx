@@ -7,6 +7,7 @@ export default function ToggleModeButton() {
 
     useEffect(() => {
         const root = document.documentElement;
+        console.log('es darkMode: ', darkMode);
         if (darkMode) {
             root.style.setProperty("--background", "#121212");
             root.style.setProperty("--foreground", "#fff");
