@@ -1,5 +1,5 @@
 import { useMenu } from "../context/MenuContext";
-import ToggleModeButton from "./toogle-mode-button-component";
+import ToggleModeButton from "./buttons/toggle-mode-button-component";
 
 export default function MenuComponent() {
     const { toggleMenu } = useMenu();

@@ -1,8 +1,9 @@
 'use client';
 import { useMenu } from "../context/MenuContext";
+import ActionButtonComponent from "./buttons/action-button-component";
 import MenuComponent from "./menu-component";
 
-export default function NavbarComponent( ) {
+export default function NavbarComponent() {
     const { showMenu, toggleMenu } = useMenu();
 
     return (
@@ -12,9 +13,12 @@ export default function NavbarComponent( ) {
                     <p>Based in</p>
                     <p>London, United Kingdom</p>
                 </div>
-                <button onClick={toggleMenu} className="button-link">MENU</button>
+                <ActionButtonComponent text={"MENU"} />
+                {/* <button onClick={toggleMenu} className="button-link">MENU</button> */}
             </div>
-            {showMenu && <MenuComponent />}
+            <div className={showMenu ? "d-block" : "d-none"}>
+                <MenuComponent />
+            </div>
         </div>
     );
 }

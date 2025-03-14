@@ -206,6 +206,37 @@ h4 {
     padding-bottom: 2rem;
 }
 
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+.action-button-container {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.button-bottom-container {
+    margin-top: .25rem;
+    width: 100%;
+    height: 2px;
+    background: #969696;
+}
+
+.button-bottom-border {
+    background: var(--foreground);
+    width: 0;
+    height: 100%;
+    transition: width 0.25s linear;
+}
+
+.action-button-container:hover .button-bottom-border {
+    width: 100%;
+}
+
 .header-container {
     
 }

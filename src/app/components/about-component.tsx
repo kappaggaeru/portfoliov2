@@ -1,8 +1,16 @@
+import { CustomButton } from "../models/button-custom-model";
+import ActionButtonComponent from "./buttons/action-button-component";
+
 export default function AboutComponent() {
+    // const testButton: CustomButton = {
+    //     text: 'privet.dev@pm.me'
+    // }
+
     return (
         <section className="about-container">
             <h3>ABOUT</h3>
             <hr className="mar-bot-3" />
+            <ActionButtonComponent text={"testButton"} />
             <h4 className="mar-bot-3">Over the years, I have worked on customer-facing products with a strong focus on excellent user experience and accessibility</h4>
             <section className="paragraphs-container">
                 <p>
