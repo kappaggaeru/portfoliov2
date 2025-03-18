@@ -217,6 +217,7 @@ h4 {
 .action-button-container {
     cursor: pointer;
     width: fit-content;
+    text-align: start;
 }
 
 .button-bottom-container {
@@ -235,6 +236,14 @@ h4 {
 
 .action-button-container:hover .button-bottom-border {
     width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
 }
 
 .header-container {

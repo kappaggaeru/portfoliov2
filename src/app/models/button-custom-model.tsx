@@ -1,4 +1,4 @@
-export interface CustomButton {
-    text: string;
-    method?: () => {}
+export interface ActionButtonProps {
+    texts?: string[];
+    icon?: { path: string };
 }

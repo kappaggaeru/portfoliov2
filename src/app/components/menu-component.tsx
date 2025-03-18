@@ -1,4 +1,5 @@
 import { useMenu } from "../context/MenuContext";
+import ActionButtonComponent from "./buttons/action-button-component";
 import ToggleModeButton from "./buttons/toggle-mode-button-component";
 
 export default function MenuComponent() {
@@ -6,7 +7,9 @@ export default function MenuComponent() {
 
     function CloseMenuButton() {
         return (
-            <button onClick={toggleMenu} className="button-link">CLOSE</button>
+            <div onClick={toggleMenu}>
+                <ActionButtonComponent texts={["CLOSE"]} />
+            </div>
         )
     }
 

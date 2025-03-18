@@ -13,8 +13,9 @@ export default function NavbarComponent() {
                     <p>Based in</p>
                     <p>London, United Kingdom</p>
                 </div>
-                <ActionButtonComponent text={"MENU"} />
-                {/* <button onClick={toggleMenu} className="button-link">MENU</button> */}
+                <div onClick={toggleMenu}>
+                    <ActionButtonComponent texts={["MENU"]} />
+                </div>
             </div>
             <div className={showMenu ? "d-block" : "d-none"}>
                 <MenuComponent />
