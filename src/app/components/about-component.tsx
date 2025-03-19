@@ -11,7 +11,7 @@ export default function AboutComponent() {
     }
 
     return (
-        <section className="about-container">
+        <section className="about-container content-container">
             <h3>ABOUT</h3>
             <hr className="mar-bot-3" />
             <h4 className="mar-bot-3">Over the years, I have worked on customer-facing products with a strong focus on excellent user experience and accessibility</h4>

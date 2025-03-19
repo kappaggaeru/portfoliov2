@@ -54,7 +54,6 @@ h4 {
 
 .main-container {
     background-color: var(--background);
-    /* height: 100vh; */
 }
 
 .home-container {
@@ -122,7 +121,7 @@ h4 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .welcome-container h1 {
@@ -246,9 +245,7 @@ h4 {
     flex-direction: row;
 }
 
-.header-container {
-    
-}
+.header-container {}
 
 .main-container {
     display: flex;
@@ -256,6 +253,41 @@ h4 {
     gap: 5rem;
 }
 
-.footer-container {
-    
+.footer-container {}
+
+@media screen and (min-width: 768px) {
+    .site-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .welcome-container h1 {
+        span {
+            font-size: 5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .site-container {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .welcome-container h1 {
+        span {
+            font-size: 10rem;
+        }
+    }
+
+    .welcome-container h2 {
+        font-size: 1.4rem;
+        width: 50%;
+    }
+
+    .content-container {
+        h3 {
+            font-size: 4rem;
+        }
+    }
 }

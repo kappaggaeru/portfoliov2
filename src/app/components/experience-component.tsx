@@ -30,7 +30,7 @@ const experienceCrowhaus: Experience = {
 
 export default function ExperienceComponent() {
     return (
-        <section className="experience-container">
+        <section className="experience-container content-container">
             <h3>EXPERIENCE</h3>
             <hr className="mar-bot-3" />
             <div className="experience-cards-container">

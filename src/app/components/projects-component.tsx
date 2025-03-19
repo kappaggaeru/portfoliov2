@@ -25,7 +25,7 @@ const projectCompound: Project = {
 
 export default function ProjectsComponent() {
     return (
-        <section className="projects-container">
+        <section className="projects-container content-container">
             <h3>PROJECTS</h3>
             <hr className="mar-bot-3" />
             <div className="projects-cards-container">
