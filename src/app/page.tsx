@@ -5,24 +5,27 @@ import NavbarComponent from "./components/navbar-component";
 import ProjectsComponent from "./components/projects-component";
 import WelcomeComponent from "./components/welcome-component";
 import { MenuProvider } from "./context/MenuContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 export default function Home() {
     return (
         <MenuProvider>
-            <section className="site-container">
-                <header className="header-container">
-                    <NavbarComponent />
-                </header>
-                <main className="main-container">
-                    <WelcomeComponent />
-                    <AboutComponent />
-                    <ExperienceComponent />
-                    <ProjectsComponent />
-                </main>
-                <footer className="footer-container">
-                    <FooterComponent />
-                </footer>
-            </section>
+            <ThemeProvider>
+                <section className="site-container">
+                    <header className="header-container">
+                        <NavbarComponent />
+                    </header>
+                    <main className="main-container">
+                        <WelcomeComponent />
+                        <AboutComponent />
+                        <ExperienceComponent />
+                        <ProjectsComponent />
+                    </main>
+                    <footer className="footer-container">
+                        <FooterComponent />
+                    </footer>
+                </section>
+            </ThemeProvider>
         </MenuProvider>
     );
 }

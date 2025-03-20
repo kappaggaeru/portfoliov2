@@ -9,21 +9,20 @@
     --font-color: var(--foreground);
     --background-color: var(--background);
     --link-color: cornflowerblue;
-    /* --font-color: #171717; */
-    /* --background: #ffffff;
-    --foreground: #171717; */
+    --bg-color: #eee;
+    --text-color: #242126;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #1f2023;
-        --foreground: #dadada;
-    }
+.dark {
+    --bg-color: #242126;
+    --text-color: #eee;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--font-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease, color 0.3s ease;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -53,17 +52,17 @@ h4 {
 }
 
 .main-container {
-    background-color: var(--background);
+    background-color: var(--bg-color);
 }
 
 .home-container {
-    background-color: var(--background);
+    background-color: var(--bg-color);
     height: 100vh;
     margin: 2rem;
 }
 
 .menu-container {
-    background: var(--background);
+    background: var(--bg-color);
     padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -245,15 +244,11 @@ h4 {
     flex-direction: row;
 }
 
-.header-container {}
-
 .main-container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
-
-.footer-container {}
 
 @media screen and (min-width: 768px) {
     .site-container {
