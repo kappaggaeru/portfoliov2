@@ -1,4 +1,3 @@
-"use client";
 import { createContext, useState, useContext, ReactNode } from "react";
 
 // Definir la interfaz del contexto
@@ -17,9 +16,9 @@ export const MenuProvider = ({ children }: { children: ReactNode }) => {
     const toggleMenu = () => setShowMenu(!showMenu);
 
     return (
-        <MenuContext.Provider value={{ showMenu, toggleMenu }}>
+        <MenuContext value={{ showMenu, toggleMenu }}>
             {children}
-        </MenuContext.Provider>
+        </MenuContext>
     );
 };
 

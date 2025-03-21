@@ -1,4 +1,3 @@
-"use client";
 import { createContext, useState, useContext, useEffect, ReactNode } from "react";
 
 // Definir la interfaz del contexto
@@ -34,9 +33,9 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     };
 
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext value={{ theme, toggleTheme }}>
             {children}
-        </ThemeContext.Provider>
+        </ThemeContext>
     );
 };
 
