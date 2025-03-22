@@ -1,6 +1,6 @@
 import { useMenu } from "../context/MenuContext";
 import ActionButtonComponent from "./buttons/action-button-component";
-import ToggleModeButton from "./buttons/toggle-mode-button-component";
+import ToggleThemeButton from "./buttons/toggle-theme-button-component";
 
 export default function MenuComponent() {
     const { toggleMenu } = useMenu();
@@ -29,11 +29,10 @@ export default function MenuComponent() {
     function FooterMenu() {
         return (
             <div className="footer-menu-container">
-                <div className="footer-menu-item button-link">
-                    <p>Say hello</p>
-                    <p>privet.dev@pm.me</p>
+                <div className="footer-menu-item">
+                    <ActionButtonComponent texts={["Say hello", "privet.dev@pm.me"]} />
                 </div>
-                <ToggleModeButton />
+                <ToggleThemeButton />
             </div>
         )
     }
@@ -43,11 +42,13 @@ export default function MenuComponent() {
             <div className="menu-header-container">
                 <CloseMenuButton />
             </div>
-            <div className="links-container">
-                <MenuLinks />
-            </div>
-            <div className="menu-footer-container">
-                <FooterMenu />
+            <div className="menu-content-container">
+                <div className="links-container">
+                    <MenuLinks />
+                </div>
+                <div className="menu-footer-container">
+                    <FooterMenu />
+                </div>
             </div>
         </div>
     );

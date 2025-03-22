@@ -13,7 +13,7 @@ export default function Home() {
                 <header className="header-container">
                     <NavbarComponent />
                 </header>
-                <main className="main-container">
+                <main className="main-container" id="main-container">
                     <WelcomeComponent />
                     <AboutComponent />
                     <ExperienceComponent />

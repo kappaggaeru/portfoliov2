@@ -13,7 +13,20 @@ const MenuContext = createContext<MenuContextType | undefined>(undefined);
 export const MenuProvider = ({ children }: { children: ReactNode }) => {
     const [showMenu, setShowMenu] = useState(false);
 
-    const toggleMenu = () => setShowMenu(!showMenu);
+    const toggleMenu = () => {
+        setShowMenu(prevShowMenu => {
+            const newShowMenu = !prevShowMenu;
+    
+            if (typeof window !== 'undefined') {
+                const mainContainer = document.querySelector("#main-container");
+                if (mainContainer) {
+                    mainContainer.classList.toggle("main-d-none", newShowMenu);
+                }
+            }
+    
+            return newShowMenu;
+        });
+    };
 
     return (
         <MenuContext value={{ showMenu, toggleMenu }}>
