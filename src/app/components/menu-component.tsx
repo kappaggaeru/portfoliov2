@@ -32,7 +32,7 @@ export default function MenuComponent() {
                 <div className="footer-menu-item">
                     <ActionButtonComponent texts={["Say hello", "privet.dev@pm.me"]} />
                 </div>
-                <ToggleThemeButton />
+                <ToggleThemeButton styleClass="text-align-end"/>
             </div>
         )
     }

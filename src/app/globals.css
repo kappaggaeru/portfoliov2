@@ -56,7 +56,8 @@ h4 {
     padding: 2rem 1.5rem;
 }
 
-.main-container {
+.menu-launcher {
+    display: block;
 }
 
 .home-container {
@@ -283,6 +284,10 @@ h4 {
     text-align: end;
 }
 
+.navbar-button {
+    display: none;
+}
+
 @media screen and (min-width: 48rem) {
     .main-d-none {
         display: block !important;
@@ -290,6 +295,10 @@ h4 {
 
     .menu-container {
         display: none;
+    }
+
+    .navbar-links-container button {
+        text-transform: uppercase;
     }
 
     .site-container {
@@ -316,7 +325,7 @@ h4 {
         grid-row: 1 / span 1;
     }
 
-    .grid-about-paragraph{
+    .grid-about-paragraph {
         grid-column: 4 / span 3;
         grid-row: 1 / span 2;
     }
@@ -328,9 +337,23 @@ h4 {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 64rem) {
     .site-container {
         margin: 0 4rem;
+    }
+
+    .navbar-button {
+        display: block;
+    }
+
+    .menu-navbar-button {
+        display: none;
+    }
+
+    .navbar-links-container {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
     }
 
     .welcome-container h1 {
