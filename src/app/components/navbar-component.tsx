@@ -20,21 +20,21 @@ export default function NavbarComponent() {
 
     return (
         <div>
-            <div className="navbar-container">
+            <div className="grid-navbar">
                 <div className="navbar-location-container">
                     <p>Based in</p>
                     <p>London, United Kingdom</p>
                 </div>
-                <div className="navbar-contact-container navbar-button">
+                <div className="navbar-contact-container">
                     <ActionButtonComponent texts={["Say hello", "privet.dev@pm.me"]} />
                 </div>
-                <div className="theme-navbar-container navbar-button">
+                <div className="navbar-theme-container">
                     <ToggleThemeButton />
                 </div>
-                <nav className="navbar-links-container navbar-button">
+                <div className="navbar-links-container">
                     {navbarLinks}
-                </nav>
-                <div onClick={toggleMenu} className="menu-navbar-button">
+                </div>
+                <div onClick={toggleMenu} className="navbar-menu-button">
                     <ActionButtonComponent texts={["MENU"]} />
                 </div>
             </div>
