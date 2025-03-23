@@ -5,7 +5,7 @@
 :root {
     --font-color: var(--foreground);
     --background-color: var(--background);
-    --link-color: cornflowerblue;
+    --link-color: var(--foreground);
     --quaternary: #dbdbdb;
 }
 
@@ -35,6 +35,7 @@ body {
 .test {
     padding: 1rem;
     border: 2px var(--tertiary) dashed;
+    border-radius: 5px;
     background: lightskyblue;
 }
 
@@ -53,6 +54,14 @@ h4 {
 
 .mar-bot-3 {
     margin-bottom: 3rem;
+}
+
+.mar-bot-1-5 {
+    margin-bottom: 1.5rem;
+}
+
+.mar-top-1-5 {
+    margin-top: 1.5rem;
 }
 
 .bold {
@@ -356,6 +365,27 @@ hr {
     grid-row: 2 / span 1;
 }
 
+.experience-grid {
+    align-self: start;
+}
+
+.experience-table {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    column-gap: 4rem;
+}
+
+.experience-table>p:nth-child(even) {
+    text-align: end;
+}
+
+.experience-table>p:nth-child(odd) {
+    color: var(--secondary);
+    text-align: start;
+}
+
 @media screen and (min-width: 48rem) {
     .site-container {
         padding: 2.5rem 4rem;
@@ -383,6 +413,7 @@ hr {
         color: var(--tertiary);
     }
 
+    /* About */
     .about-grid-container {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(6, 1fr);
@@ -406,6 +437,34 @@ hr {
     .role-link-container {
         grid-column: span 6;
         grid-row: span 1;
+    }
+
+    /* Experience */
+    .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto auto;
+        column-gap: 2rem;
+    }
+
+    .experience-grid-title {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
+
+    .experience-grid-subtitle {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+    }
+
+    .experience-grid-text {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+    }
+
+    .experience-grid-table {
+        grid-column: 4 / span 3;
+        grid-row: 2 / span 2;
     }
 }
 
@@ -473,6 +532,7 @@ hr {
         display: none;
     }
 
+    /* About */
     .role-link-container {
         grid-column: span 2;
         grid-row: 2 / span 1;
@@ -503,5 +563,29 @@ hr {
 
     .about-grid-links {
         grid-column: span 4;
+    }
+
+    /* Experience */
+    .experience-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .experience-grid-subtitle {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    .experience-grid-text {
+        grid-column: 6 / span 3;
+        grid-row: 2;
+    }
+    
+    .experience-grid-table {
+        grid-column: 3 / span 2;
+        grid-row: 2;
+    }
+
+    .experience-grid-title h4 {
+        font-size: 3rem;
     }
 }
