@@ -25,28 +25,26 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
     }
 
     return (
-        <div>
-            <div className="project-grid">
-                <div className="project-grid-title">
-                    <h4>{project.title}</h4>
-                    <p>{skillsParagraphs}</p>
-                    <p>{project.year}</p>
+        <div className="project-grid">
+            <div className="project-grid-title">
+                <h4>{project.title}</h4>
+                <p>{skillsParagraphs}</p>
+                <p>{project.year}</p>
+            </div>
+            <div className="project-grid-gallery">
+                <div className="gallery-container">
+                    <img src={project.images[0].src} alt={project.images[0].alt}></img>
                 </div>
-                <div className="project-grid-gallery">
-                    <div className="gallery-container">
-                        <img src={project.images[0].src} alt={project.images[0].alt}></img>
-                    </div>
+            </div>
+            <div className="project-grid-text">
+                <div className="grid-subtitle">
+                    {paragraphs}
                 </div>
-                <div className="project-grid-text">
-                    <div className="grid-subtitle">
-                        {paragraphs}
-                    </div>
-                </div>
-                <div className="project-grid-link">
-                    <a href={project.website}>
-                        <ActionButtonComponent {...props} />
-                    </a>
-                </div>
+            </div>
+            <div className="project-grid-link">
+                <a href={project.website}>
+                    <ActionButtonComponent {...props} />
+                </a>
             </div>
         </div>
     );

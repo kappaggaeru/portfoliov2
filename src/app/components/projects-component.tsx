@@ -33,11 +33,11 @@ const projectBrowser: Project = {
     year: '2022',
     images: [
         {
-            src: '/assets/images/andrey-project-1.png',
+            src: '/assets/images/andrey-project-2.png',
             alt: 'web-image'
         },
         {
-            src: '/assets/images/andrey-project-2.png',
+            src: '/assets/images/andrey-project-3.png',
             alt: 'web-image'
         }
     ],
@@ -49,6 +49,34 @@ const projectBrowser: Project = {
     website: 'www.tabager.com'
 }
 
+const projectDrift: Project = {
+    title: 'Drift Focus & Meditation',
+    skills: [
+        'iOS Development'
+    ],
+    year: '2022',
+    images: [
+        {
+            src: '/assets/images/andrey-project-4.png',
+            alt: 'web-image'
+        },
+        {
+            src: '/assets/images/andrey-project-5.png',
+            alt: 'web-image'
+        },
+        {
+            src: '/assets/images/andrey-project-6.png',
+            alt: 'web-image'
+        }
+    ],
+    paragraphs: [
+        'As a part of a small team, I helped plan, develop and launch a native iOS application for a client in the mental health sector.',
+        'Drift combined meditation & with popular focus methods to help users improve their focus. The app offered an extra level of customisation, with the ability to create custom focus sessions to suit user needs.',
+        'The project was built with Swift and MVVM architecture, integrating RevenueCat for the in-app payments.'
+    ],
+    website: 'Project details'
+}
+
 export default function ProjectsComponent() {
     return (
         <section className="projects-container content-container">
@@ -57,6 +85,7 @@ export default function ProjectsComponent() {
             <div className="projects-cards-container">
                 <ProjectCardComponent project={projectCompound} />
                 <ProjectCardComponent project={projectBrowser} />
+                <ProjectCardComponent project={projectDrift} />
             </div>
         </section>
     );

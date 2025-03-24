@@ -511,6 +511,10 @@ hr {
         grid-template-columns: repeat(6, 1fr);
     }
 
+    .project-grid:nth-child(even) {
+        direction: rtl;
+    }
+
     .project-grid-title {
         grid-column: 1 / span 3;
         grid-row: 1 / 2;
@@ -563,11 +567,6 @@ hr {
     .welcome-container h2 {
         font-size: 1.4rem;
         width: 50%;
-    }
-
-    .site-container {
-        margin: 0 4rem;
-        padding: 2.5rem 0;
     }
 
     .navbar-contact-container {
@@ -687,5 +686,13 @@ hr {
 
     .project-grid-link {
         grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (min-width: 96rem) {
+    .site-container {
+        max-width: 1512px;
+        margin: 0 auto;
+        padding: 2.5rem 3.5rem;
     }
 }
