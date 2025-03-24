@@ -36,7 +36,7 @@ export default function AboutComponent() {
         </div>
 
     return (
-        <section className="about-container content-container">
+        <section id="about" className="about-container content-container">
             <h3>ABOUT</h3>
             <hr className="mar-bot-3" />
             <div className="about-grid-container">

@@ -25,6 +25,10 @@
     --tertiary: #4E4752;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--background);
     color: var(--foreground);
@@ -590,12 +594,12 @@ hr {
         justify-content: space-between;
     }
 
-    .navbar-links-container>button {
+    .navbar-links-container>a>button {
         text-transform: uppercase;
         display: flex;
     }
 
-    .navbar-links-container>button:first-child {
+    .navbar-links-container>a>button:first-child {
         text-align: center;
     }
 

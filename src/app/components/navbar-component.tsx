@@ -15,7 +15,11 @@ export default function NavbarComponent() {
     ];
 
     const navbarLinks = links.map((link, index) =>
-        <button key={index}>{link}</button>
+        <a href={`#${link}`} key={index}>
+            <button>
+                {link}
+            </button>
+        </a>
     );
 
     return (
