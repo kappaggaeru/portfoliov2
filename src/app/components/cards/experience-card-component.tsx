@@ -25,8 +25,10 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
                     <h4>{experience.company}</h4>
                 </div>
                 <div className="experience-grid-subtitle mar-top-1-5">
-                    <p>{experience.subtitle}</p>
-                    <p>{experience.time}</p>
+                    <div className="grid-subtitle">
+                        <p>{experience.subtitle}</p>
+                        <p>{experience.time}</p>
+                    </div>
                 </div>
                 <div className="experience-grid-text mar-top-1-5">
                     <section className="paragraphs-container">
@@ -47,9 +49,11 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
                         }
                         {
                             experience.website &&
-                            <a href={experience.website}>
-                                <ActionButtonComponent {...props} />
-                            </a>
+                            <p>
+                                <a href={experience.website}>
+                                    <ActionButtonComponent {...props} />
+                                </a>
+                            </p>
                         }
                     </div>
                 </div>
