@@ -23,6 +23,32 @@ const projectCompound: Project = {
     website: 'www.savings.lol'
 }
 
+const projectBrowser: Project = {
+    title: 'Browser Agnostic Tab Manager',
+    skills: [
+        'Web Development',
+        'Design',
+        'Idea',
+    ],
+    year: '2022',
+    images: [
+        {
+            src: '/assets/images/andrey-project-1.png',
+            alt: 'web-image'
+        },
+        {
+            src: '/assets/images/andrey-project-2.png',
+            alt: 'web-image'
+        }
+    ],
+    paragraphs: [
+        'The project has been created to solve the personal problem of organising learning resources.',
+        'I was hoping to create a tool that would help me quickly capture and re-share various resources without being limited to a single device or web browser.',
+        'The project was built using TypeScript, React, and Tailwind CSS, with data stored in MongoDB.'
+    ],
+    website: 'www.tabager.com'
+}
+
 export default function ProjectsComponent() {
     return (
         <section className="projects-container content-container">
@@ -30,6 +56,7 @@ export default function ProjectsComponent() {
             <hr className="mar-bot-3" />
             <div className="projects-cards-container">
                 <ProjectCardComponent project={projectCompound} />
+                <ProjectCardComponent project={projectBrowser} />
             </div>
         </section>
     );

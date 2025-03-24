@@ -7,6 +7,7 @@
     --background-color: var(--background);
     --link-color: var(--foreground);
     --quaternary: #dbdbdb;
+    --black: #09090b;
 }
 
 .light {
@@ -395,6 +396,32 @@ hr {
     gap: 1rem;
 }
 
+/* Projects */
+.projects-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.project-grid {
+    display: grid;
+    /* padding: 1rem;
+    border-radius: 5px;
+    border: 2px var(--tertiary) dashed;
+    background: palegoldenrod; */
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.gallery-container {
+    padding: 1.5rem;
+    background: var(--black);
+}
+
+.gallery-container img {
+    width: 100%;
+}
+
 @media screen and (min-width: 48rem) {
     .site-container {
         padding: 2.5rem 4rem;
@@ -402,10 +429,6 @@ hr {
 
     .main-d-none {
         display: block !important;
-    }
-
-    .menu-container {
-        display: none;
     }
 
     .content-container {
@@ -479,6 +502,35 @@ hr {
     .experience-grid-title h4 {
         font-size: 3rem;
     }
+
+    /* Projects */
+    .project-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .project-grid-title {
+        grid-column: 1 / span 3;
+        grid-row: 1 / 2;
+    }
+
+    .project-grid-gallery {
+        grid-column: 4 / span 3;
+        grid-row: 1 / span 4;
+    }
+
+    .project-grid-text {
+        grid-column: 1 / span 3;
+        grid-row: 2 / 3;
+    }
+
+    .project-grid-link {
+        grid-column: 1 / span 3;
+        grid-row: 3 / 4;
+    }
+
+    .gallery-container {
+        padding: 2rem;
+    }
 }
 
 @media screen and (min-width: 64rem) {
@@ -488,6 +540,10 @@ hr {
 
     .main-container {
         row-gap: 15rem;
+    }
+
+    .menu-container {
+        display: none;
     }
 
     .grid-navbar {
@@ -579,6 +635,10 @@ hr {
     }
 
     /* Experience */
+    .gallery-container {
+        padding: 4rem;
+    }
+
     .experience-grid {
         grid-template-columns: repeat(8, 1fr);
     }
@@ -592,9 +652,36 @@ hr {
         grid-column: 6 / span 3;
         grid-row: 2;
     }
-    
+
     .experience-grid-table {
         grid-column: 3 / span 2;
         grid-row: 2;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    /* Projects */
+    .project-grid-title h4 {
+        font-size: 1.5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .project-grid-title {
+        grid-column: 1 / span 2;
+    }
+
+    .project-grid-gallery {
+        grid-column: 4 / span 5;
+    }
+
+    .project-grid-text {
+        grid-column: 1 / span 2;
+    }
+
+    .project-grid-link {
+        grid-column: 1 / span 2;
     }
 }

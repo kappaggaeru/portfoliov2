@@ -33,7 +33,6 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
                 <div className="experience-grid-text mar-top-1-5">
                     <section className="paragraphs-container">
                         {paragraphs}
-
                     </section>
                 </div>
                 <div className="experience-grid-table mar-top-1-5">
