@@ -29,10 +29,8 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
             <div className="project-grid">
                 <div className="project-grid-title">
                     <h4>{project.title}</h4>
-                    <div className="grid-subtitle">
-                        <p>{skillsParagraphs}</p>
-                        <p>{project.year}</p>
-                    </div>
+                    <p>{skillsParagraphs}</p>
+                    <p>{project.year}</p>
                 </div>
                 <div className="project-grid-gallery">
                     <div className="gallery-container">

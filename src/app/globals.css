@@ -394,6 +394,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    color: var(--secondary);
 }
 
 /* Projects */
@@ -405,10 +406,6 @@ hr {
 
 .project-grid {
     display: grid;
-    /* padding: 1rem;
-    border-radius: 5px;
-    border: 2px var(--tertiary) dashed;
-    background: palegoldenrod; */
     row-gap: 2rem;
     column-gap: 2rem;
 }
@@ -420,6 +417,12 @@ hr {
 
 .gallery-container img {
     width: 100%;
+}
+
+.project-grid-title {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -635,6 +638,14 @@ hr {
     }
 
     /* Experience */
+    .project-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .project-grid-title h4 {
+        font-size: 1.4rem;
+    }
+
     .gallery-container {
         padding: 4rem;
     }
@@ -657,24 +668,17 @@ hr {
         grid-column: 3 / span 2;
         grid-row: 2;
     }
-}
-
-@media screen and (min-width: 80rem) {
-    /* Projects */
-    .project-grid-title h4 {
-        font-size: 1.5rem;
-    }
-
-    .project-grid {
-        grid-template-columns: repeat(8, 1fr);
-    }
-
-    .project-grid-title {
-        grid-column: 1 / span 2;
-    }
 
     .project-grid-gallery {
         grid-column: 4 / span 5;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+
+    /* Projects */
+    .project-grid-title {
+        grid-column: 1 / span 2;
     }
 
     .project-grid-text {
