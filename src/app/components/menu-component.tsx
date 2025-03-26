@@ -13,30 +13,26 @@ export default function MenuComponent() {
         )
     }
 
+    const labels = [
+        'about',
+        'experience',
+        'projects',
+        'contact'
+    ];
+
+    const listLabels = labels.map((label, index) =>
+        <li key={index}>
+            <a href={`#${label}`} className="a-navbar" onClick={toggleMenu}>
+                {label}
+            </a>
+        </li>
+    );
+
     function MenuLinks() {
         return (
             <div className="menu-links-container">
                 <ul>
-                    <li>
-                        <a href="#about">
-                            ABOUT
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#experience">
-                            EXPERIENCE
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects">
-                            PROJECTS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            CONTACT
-                        </a>
-                    </li>
+                    {listLabels}
                 </ul>
             </div>
         )

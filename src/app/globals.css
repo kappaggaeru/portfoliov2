@@ -6,8 +6,7 @@
     --font-color: var(--foreground);
     --background-color: var(--background);
     --link-color: var(--foreground);
-    --quaternary: #dbdbdb;
-    --black: #09090b;
+    --black: #09090B;
 }
 
 .light {
@@ -16,6 +15,7 @@
     --foreground: #242126;
     --secondary: #575757;
     --tertiary: #969696;
+    --quaternary: #DBDBDB;
 }
 
 .dark {
@@ -23,6 +23,7 @@
     --foreground: #C4C5C9;
     --secondary: #969696;
     --tertiary: #4E4752;
+    --quaternary: #2B292E;
 }
 
 html {
@@ -46,6 +47,10 @@ body {
 
 a {
     color: var(--link-color);
+}
+
+.a-navbar {
+    text-transform: uppercase;
 }
 
 h3 {
@@ -181,7 +186,8 @@ h4 {
 }
 
 hr {
-    border-bottom: 1px var(--quaternary) solid;
+    border-top: 0;
+    border-bottom: 2px var(--quaternary) solid;
 }
 
 .welcome-container h1 {
