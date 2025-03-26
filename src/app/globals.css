@@ -436,6 +436,31 @@ hr {
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 1rem;
+    direction: ltr;
+}
+
+.project-grid-text {
+    direction: ltr;
+}
+
+.project-grid-link {
+    direction: ltr;
+}
+
+.project-images-controller-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    direction: ltr;
+    padding: 1rem 0;
+}
+
+.images-controller-buttons>button:first-of-type{
+    padding-right: 1rem;
+}
+
+.images-controller-buttons>button:last-of-type{
+    padding-left: 1rem;
 }
 
 @media screen and (min-width: 48rem) {
