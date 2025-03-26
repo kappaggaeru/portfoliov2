@@ -81,7 +81,7 @@ export default function ProjectsComponent() {
     return (
         <section id="projects" className="projects-container content-container">
             <h3>PROJECTS</h3>
-            <hr className="mar-bot-3" />
+            <hr className="mar-bot-4" />
             <div className="projects-cards-container">
                 <ProjectCardComponent project={projectCompound} />
                 <ProjectCardComponent project={projectBrowser} />

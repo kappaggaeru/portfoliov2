@@ -17,10 +17,26 @@ export default function MenuComponent() {
         return (
             <div className="menu-links-container">
                 <ul>
-                    <li>ABOUT</li>
-                    <li>EXPERIENCE</li>
-                    <li>PROJECTS</li>
-                    <li>CONTACT</li>
+                    <li>
+                        <a href="#about">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience">
+                            EXPERIENCE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            PROJECTS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            CONTACT
+                        </a>
+                    </li>
                 </ul>
             </div>
         )
@@ -32,7 +48,7 @@ export default function MenuComponent() {
                 <div className="footer-menu-item">
                     <ActionButtonComponent texts={["Say hello", "privet.dev@pm.me"]} />
                 </div>
-                <ToggleThemeButton styleClass="text-align-end"/>
+                <ToggleThemeButton styleClass="text-align-end" />
             </div>
         )
     }

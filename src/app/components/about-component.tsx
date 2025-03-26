@@ -38,10 +38,10 @@ export default function AboutComponent() {
     return (
         <section id="about" className="about-container content-container">
             <h3>ABOUT</h3>
-            <hr className="mar-bot-3" />
+            <hr className="mar-bot-4" />
             <div className="about-grid-container">
                 <div className="about-grid-title">
-                    <h4 className="mar-bot-3 grid-about-title">{title}</h4>
+                    <h4 className="mar-bot-4 grid-about-title">{title}</h4>
                 </div>
                 <div className="about-grid-text">
                     <section className="paragraphs-container grid-about-paragraph">

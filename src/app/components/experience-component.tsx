@@ -32,7 +32,7 @@ export default function ExperienceComponent() {
     return (
         <section id="experience" className="experience-container content-container">
             <h3>EXPERIENCE</h3>
-            <hr className="mar-bot-3" />
+            <hr className="mar-bot-4" />
             <div className="experience-cards-container">
                 <ExperienceCardComponent experience={experienceStarling} />
                 <ExperienceCardComponent experience={experienceCrowhaus} />
