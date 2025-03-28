@@ -5,14 +5,9 @@ export default function AboutComponent() {
 
     const props: ActionButtonProps = {
         texts: ["Explore LinkedIn"],
-        icon: {
-            path: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
-        }
+        icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
     }
 
-        // < a href = "https://www.linkedin.com/in/mitk8" target = "_blank" className = "link-w-icon" >
-        //     <ActionButtonComponent {...props} />
-        //             </a >
 
     const arrayParagraphs = [
         "Self-taught software engineer with a strong knowledge of TypeScript, Swift, and Java. I am passionate about working on meaningful projects that have a positive impact on people's lives.",

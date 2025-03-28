@@ -13,9 +13,7 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
 
     const props: ActionButtonProps = {
         texts: [experience.website ? experience.website : ''],
-        icon: {
-            path: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
-        }
+        icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
     }
 
     return (

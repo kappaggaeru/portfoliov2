@@ -18,10 +18,8 @@ export default function Home() {
                     <AboutComponent />
                     <ExperienceComponent />
                     <ProjectsComponent />
-                </main>
-                <footer className="footer-container">
                     <FooterComponent />
-                </footer>
+                </main>
             </section>
         </AppProviders>
     );

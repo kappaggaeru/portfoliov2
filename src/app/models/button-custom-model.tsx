@@ -1,5 +1,5 @@
 export interface ActionButtonProps {
     texts?: string[];
-    icon?: { path: string };
+    icon?: string;
     styleClass?: string;
 }
