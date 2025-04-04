@@ -80,8 +80,8 @@ const projectDrift: Project = {
 export default function ProjectsComponent() {
     return (
         <section id="projects" className="projects-container content-container">
-            <h3>PROJECTS</h3>
-            <hr className="mar-bot-4" />
+            <h3 className="title-section">PROJECTS</h3>
+            <hr className="mar-bot" />
             <div className="projects-cards-container">
                 <ProjectCardComponent project={projectCompound} />
                 <ProjectCardComponent project={projectBrowser} />

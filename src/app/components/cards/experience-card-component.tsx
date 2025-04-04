@@ -22,18 +22,18 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
                 <div className="experience-grid-title">
                     <h4>{experience.company}</h4>
                 </div>
-                <div className="experience-grid-subtitle mar-top-1-5">
+                <div className="experience-grid-subtitle mar-top-1">
                     <div className="grid-subtitle">
                         <p>{experience.subtitle}</p>
                         <p>{experience.time}</p>
                     </div>
                 </div>
-                <div className="experience-grid-text mar-top-1-5">
+                <div className="experience-grid-text mar-top-1">
                     <section className="paragraphs-container">
                         {paragraphs}
                     </section>
                 </div>
-                <div className="experience-grid-table mar-top-1-5">
+                <div className="experience-grid-table mar-top-1">
                     <div className="experience-table">
                         <p>Position</p>
                         <p>{experience.position}</p>

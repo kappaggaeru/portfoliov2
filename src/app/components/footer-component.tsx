@@ -5,7 +5,7 @@ const arrowIcon = "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.
 export default function FooterComponent() {
     return (
         <footer id="contact">
-            <hr className="mar-bot-4" />
+            <hr className="mar-bot" />
             <div className="footer-grid">
                 <div className="footer-title-container">
                     <h4>Let's Collaborate</h4>

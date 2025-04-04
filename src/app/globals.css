@@ -74,23 +74,25 @@ a, span, p {
 
 h3 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    margin: 0;
 }
 
-.mar-bot-4 {
-    margin-bottom: 4rem;
+.mar-bot {
+    margin-bottom: 3rem;
 }
 
 .mar-bot-1-5 {
     margin-bottom: 1.5rem;
 }
 
-.mar-top-1-5 {
-    margin-top: 1.5rem;
+.mar-top-1 {
+    margin-top: 1rem;
 }
 
 .bold {
@@ -199,10 +201,10 @@ h4 {
 
 .welcome-container {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: 2px var(--tertiary) dashed;
 }
 
@@ -210,6 +212,7 @@ h4 {
     font-size: 1rem;
     color: var(--secondary);
     line-height: var(--line-height);
+    margin-bottom: 0;
 }
 
 hr {
@@ -224,7 +227,7 @@ hr {
     font-weight: 600;
     width: 100%;
     max-width: 28rem;
-    margin: 0 auto;
+    margin: auto;
 
     span {
         font-size: 4rem;
@@ -260,6 +263,7 @@ hr {
 }
 
 .paragraphs-container {
+    margin-top: 2rem;
     & p {
         padding-bottom: 2rem;
         font-weight: 600;
@@ -356,10 +360,14 @@ hr {
     flex-direction: row;
 }
 
+.title-section {
+    margin-bottom: 1rem;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 8rem;
 }
 
 .grid-about {
@@ -398,6 +406,7 @@ hr {
 .role-link-container {
     grid-column: span 3;
     grid-row: span 1;
+    font-weight: 600;
 }
 
 .contact-link-container {
@@ -420,8 +429,10 @@ hr {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
     row-gap: 1rem;
     column-gap: 4rem;
+    font-weight: 600;
 }
 
 .experience-table>p:nth-child(even) {
@@ -439,6 +450,7 @@ hr {
     flex-direction: column;
     gap: 1rem;
     color: var(--secondary);
+    font-weight: 600;
 }
 
 /* Projects */
@@ -468,6 +480,7 @@ hr {
     grid-template-rows: auto auto;
     row-gap: 1rem;
     direction: ltr;
+    font-weight: 600;
 }
 
 .project-grid-text {
@@ -484,6 +497,7 @@ hr {
     flex-direction: row;
     direction: ltr;
     padding: 1rem 0;
+    font-weight: 600;
 }
 
 .images-controller-buttons>button:first-of-type{

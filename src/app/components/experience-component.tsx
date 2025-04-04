@@ -31,8 +31,8 @@ const experienceCrowhaus: Experience = {
 export default function ExperienceComponent() {
     return (
         <section id="experience" className="experience-container content-container">
-            <h3>EXPERIENCE</h3>
-            <hr className="mar-bot-4" />
+            <h3 className="title-section">EXPERIENCE</h3>
+            <hr className="mar-bot" />
             <div className="experience-cards-container">
                 <ExperienceCardComponent experience={experienceStarling} />
                 <ExperienceCardComponent experience={experienceCrowhaus} />
