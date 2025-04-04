@@ -10,6 +10,8 @@
     --link-color: var(--foreground);
     --black: #09090B;
     --line-height: 160%;
+    --text-weight: 500;
+    --title-weight: 600;
 }
 
 .light {
@@ -60,7 +62,6 @@ button {
 }
 
 a, span, p {
-    color: var(--link-color);
     font-family: "Inter", Helvetica, Arial, sans-serif;
     margin: 0;
     text-decoration: none;
@@ -95,10 +96,6 @@ h4 {
     margin-top: 1rem;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 .site-container {
     padding: 2.5rem 1.5rem;
 }
@@ -107,7 +104,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .navbar-contact-container {
@@ -123,7 +120,7 @@ h4 {
 }
 
 .navbar-links-container>a>button {
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .navbar-menu-button {
@@ -173,7 +170,7 @@ h4 {
 .menu-links-container {
     & ul {
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: var(--title-weight);
 
         & li {
             padding: 1rem 0;
@@ -205,7 +202,6 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px var(--tertiary) dashed;
 }
 
 .welcome-container h2 {
@@ -224,7 +220,7 @@ hr {
 
 .welcome-container h1 {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: var(--title-weight);
     width: 100%;
     max-width: 28rem;
     margin: auto;
@@ -251,7 +247,7 @@ hr {
 
 .button-link {
     border-bottom: 2px var(--foreground) solid;
-    font-weight: 500;
+    font-weight: var(--title-weight);
     padding-bottom: .5rem;
     cursor: pointer;
 }
@@ -266,7 +262,7 @@ hr {
     margin-top: 2rem;
     & p {
         padding-bottom: 2rem;
-        font-weight: 600;
+        font-weight: var(--text-weight);
         color: var(--secondary);
         line-height: var(--line-height);
     }
@@ -326,7 +322,7 @@ hr {
     cursor: pointer;
     width: fit-content;
     text-align: start;
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .button-bottom-container {
@@ -406,7 +402,7 @@ hr {
 .role-link-container {
     grid-column: span 3;
     grid-row: span 1;
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .contact-link-container {
@@ -426,13 +422,13 @@ hr {
 }
 
 .experience-table {
+    margin-top: 2rem;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
     row-gap: 1rem;
     column-gap: 4rem;
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .experience-table>p:nth-child(even) {
@@ -450,7 +446,7 @@ hr {
     flex-direction: column;
     gap: 1rem;
     color: var(--secondary);
-    font-weight: 600;
+    font-weight: var(--text-weight);
 }
 
 /* Projects */
@@ -480,7 +476,7 @@ hr {
     grid-template-rows: auto auto;
     row-gap: 1rem;
     direction: ltr;
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .project-grid-text {
@@ -497,7 +493,7 @@ hr {
     flex-direction: row;
     direction: ltr;
     padding: 1rem 0;
-    font-weight: 600;
+    font-weight: var(--title-weight);
 }
 
 .images-controller-buttons>button:first-of-type{
@@ -546,8 +542,28 @@ hr {
         padding: 2.5rem 4rem;
     }
 
+    .main-container {
+        row-gap: 12rem;
+    }
+
+    .mar-bot {
+        margin-bottom: 4rem;
+    }
+
+    .paragraphs-container {
+        margin-top: 0;
+    }
+
+    .experience-table {
+        margin-top: 0;
+    }
+
     .welcome-container h1 {
         max-width: 42rem;
+    }
+
+    .welcome-container h2 {
+        width: 70%;
     }
 
     .welcome-container h1 span {
@@ -714,7 +730,6 @@ hr {
 
     .welcome-container h2 {
         font-size: 1.4rem;
-        width: 50%;
     }
 
     .navbar-contact-container {
