@@ -70,7 +70,7 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
                 }
             </div>
             <div className="project-grid-text">
-                <div className="grid-subtitle">
+                <div className="project-grid-subtitle">
                     {paragraphs}
                 </div>
             </div>
