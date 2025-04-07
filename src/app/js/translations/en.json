@@ -1,0 +1,15 @@
+{
+    "welcome": "Welcome to my website",
+    "description": "A business-oriented product engineer with 3+ years of experience working in fintech and proptech industries",
+    "switchLanguage": "cambiar a",
+    "language": "español",
+    "switchTo": "switch to",
+    "located": "based in",
+    "location": "london, united kingdom",
+    "about": "about",
+    "experience": "experience",
+    "projects": "projects",
+    "contact": "contact",
+    "darkMode": "dark mode",
+    "lightMode": "light mode"
+}

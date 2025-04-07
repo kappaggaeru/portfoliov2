@@ -1,5 +1,6 @@
 export interface ActionButtonProps {
-    texts?: string[];
+    firstText: string;
+    secondText?: string;
     icon?: string;
     styleClass?: string;
 }

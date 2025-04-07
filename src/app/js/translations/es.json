@@ -1,0 +1,15 @@
+{
+    "welcome": "Bienvenido a mi sitio web",
+    "description": "Developer",
+    "switchLanguage": "switch to",
+    "language": "english",
+    "switchTo": "cambiar a",
+    "located": "ubicado en",
+    "location": "buenos aires, argentina",
+    "about": "sobre mí",
+    "experience": "experiencia",
+    "projects": "proyectos",
+    "contact": "contacto",
+    "darkMode": "modo oscuro",
+    "lightMode": "modo claro"
+}
