@@ -96,6 +96,23 @@ p {
 
 .a-navbar {
     text-transform: uppercase;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.capital-case {
+    text-transform: capitalize;
+}
+
+.f-letter-capital::first-letter {
+    text-transform: capitalize;
+}
+
+.toggle-theme-button span:first-of-type::first-letter {
+    text-transform: capitalize;
+}
+.toggle-theme-button span:last-of-type {
+    text-transform: capitalize;
 }
 
 h3 {
@@ -196,6 +213,8 @@ h4 {
     & ul {
         font-size: 2rem;
         font-weight: var(--title-weight);
+        list-style: none;
+        padding: 0;
 
         & li {
             padding: 1rem 0;
@@ -349,6 +368,11 @@ hr {
     width: fit-content;
     text-align: start;
     font-weight: var(--title-weight);
+}
+
+.action-button-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .button-bottom-container {

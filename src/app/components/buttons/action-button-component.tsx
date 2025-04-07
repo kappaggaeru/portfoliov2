@@ -1,12 +1,12 @@
 import { ActionButtonProps } from "@/app/models/button-custom-model";
 
-export default function ActionButtonComponent({ texts, icon, styleClass }: ActionButtonProps) {
-    const Texts = texts?.map((text, index) =>
-        <span key={index}>
-            {text}
-            <br />
-        </span>
-    );
+export default function ActionButtonComponent({ firstText, secondText, icon, styleClass }: ActionButtonProps) {
+    const Texts =
+        <p className={"action-button-text " + styleClass}>
+            <span>{firstText}</span>
+            {secondText && <span>{secondText}</span>}
+        </p>
+        ;
 
     const Icon = (
         icon &&
@@ -16,7 +16,7 @@ export default function ActionButtonComponent({ texts, icon, styleClass }: Actio
     );
 
     return (
-        <button className={"action-button-container " + styleClass}>
+        <button className={"action-button-container"}>
             <div className={icon ? "d-flex flex-row" : ""}>
                 {Texts}
                 {icon && Icon}

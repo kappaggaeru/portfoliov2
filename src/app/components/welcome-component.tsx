@@ -1,4 +1,6 @@
+"use client";
 export default function WelcomeComponent() {
+
     return (
         <section className="welcome-container">
             <h1>

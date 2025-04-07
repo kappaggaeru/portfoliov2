@@ -8,7 +8,7 @@ export default function MenuComponent() {
     function CloseMenuButton() {
         return (
             <div onClick={toggleMenu}>
-                <ActionButtonComponent texts={["CLOSE"]} />
+                <ActionButtonComponent firstText={"CLOSE"} />
             </div>
         )
     }
@@ -42,9 +42,9 @@ export default function MenuComponent() {
         return (
             <div className="footer-menu-container">
                 <div className="footer-menu-item">
-                    <ActionButtonComponent texts={["Say hello", "privet.dev@pm.me"]} />
+                    <ActionButtonComponent firstText={"Say hello"} secondText={"privet.dev@pm.me"} />
                 </div>
-                <ToggleThemeButton styleClass="text-align-end" />
+                <ToggleThemeButton styleClass="toggle-theme-button text-align-end" />
             </div>
         )
     }

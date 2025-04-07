@@ -10,19 +10,19 @@ export default function FooterComponent() {
                 <div className="footer-title-container">
                     <h4>Let's Collaborate</h4>
                     <a className="contact-link-footer">
-                        <ActionButtonComponent texts={["privet.dev@pm.me"]} />
+                        <ActionButtonComponent firstText={"privet.dev@pm.me"} />
                     </a>
                 </div>
                 <div className="footer-subtitle-container">
                     <div className="footer-links-container">
                         <a href="">
-                            <ActionButtonComponent texts={["GitHub"]} icon={arrowIcon} />
+                            <ActionButtonComponent firstText={"GitHub"} icon={arrowIcon} />
                         </a>
                         <a href="">
-                            <ActionButtonComponent texts={["LinkedIn"]} icon={arrowIcon} />
+                            <ActionButtonComponent firstText={"LinkedIn"} icon={arrowIcon} />
                         </a>
                         <a href="">
-                            <ActionButtonComponent texts={["Medium"]} icon={arrowIcon} />
+                            <ActionButtonComponent firstText={"Medium"} icon={arrowIcon} />
                         </a>
                     </div>
                     <p>© ANDREY MITKO 2025</p>

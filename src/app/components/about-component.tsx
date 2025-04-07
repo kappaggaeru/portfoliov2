@@ -4,7 +4,7 @@ import ActionButtonComponent from "./buttons/action-button-component"
 export default function AboutComponent() {
 
     const props: ActionButtonProps = {
-        texts: ["Explore LinkedIn"],
+        firstText: "Explore LinkedIn",
         icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
     }
 
@@ -47,7 +47,7 @@ export default function AboutComponent() {
                     <div className="grid-links">
                         <div className="role-link-container">{role}</div>
                         <div className="contact-link-container">
-                            <ActionButtonComponent texts={["Say hello", "privet.dev@pm.me"]} />
+                            <ActionButtonComponent firstText={"say hello"} secondText={"privet.dev@pm.me"} />
                         </div>
                         <div className="explore-link-container">
                             <ActionButtonComponent {...props} />
