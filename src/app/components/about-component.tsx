@@ -15,8 +15,7 @@ export default function AboutComponent() {
     const arrayParagraphs = [
         t.aboutP1,
         t.aboutP2,
-        t.aboutP3,
-        t.aboutP4
+        t.aboutP3
     ];
 
     const paragraphs = arrayParagraphs.map((p, index) =>

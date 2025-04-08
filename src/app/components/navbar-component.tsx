@@ -8,7 +8,7 @@ import MenuComponent from "./menu-component";
 
 export default function NavbarComponent() {
     const { showMenu, toggleMenu } = useMenu();
-    const { t, changeLanguage, language } = useLanguage();
+    const { t } = useLanguage();
 
     const links = [
         t.about,
@@ -36,13 +36,15 @@ export default function NavbarComponent() {
                     <LanguageButtonComponent />
                 </div>
                 <div className="navbar-theme-container">
-                    <ToggleThemeButton styleClass="toggle-theme-button"/>
+                    <ToggleThemeButton styleClass="toggle-theme-button" />
                 </div>
                 <div className="navbar-links-container">
                     {navbarLinks}
                 </div>
-                <div onClick={toggleMenu} className="navbar-menu-button menu-button">
-                    <ActionButtonComponent firstText={"menu"} />
+                <div className="navbar-menu-button menu-button">
+                    <div onClick={toggleMenu} className="menu-button-container">
+                        <ActionButtonComponent firstText={"menu"} />
+                    </div>
                 </div>
             </div>
             <div className={showMenu ? "d-block" : "d-none"}>
