@@ -1,23 +1,26 @@
+import { useLanguage } from "../context/LanguageContext";
 import { useMenu } from "../context/MenuContext";
 import ActionButtonComponent from "./buttons/action-button-component";
+import LanguageButtonComponent from "./buttons/language-change-button-component";
 import ToggleThemeButton from "./buttons/toggle-theme-button-component";
 
 export default function MenuComponent() {
     const { toggleMenu } = useMenu();
+    const { t } = useLanguage();
 
     function CloseMenuButton() {
         return (
             <div onClick={toggleMenu}>
-                <ActionButtonComponent firstText={"CLOSE"} />
+                <ActionButtonComponent firstText={t.close} styleClass="menu-button"/>
             </div>
         )
     }
 
     const labels = [
-        'about',
-        'experience',
-        'projects',
-        'contact'
+        t.about,
+        t.experience,
+        t.projects,
+        t.contact
     ];
 
     const listLabels = labels.map((label, index) =>
@@ -42,7 +45,7 @@ export default function MenuComponent() {
         return (
             <div className="footer-menu-container">
                 <div className="footer-menu-item">
-                    <ActionButtonComponent firstText={"Say hello"} secondText={"privet.dev@pm.me"} />
+                    <LanguageButtonComponent />
                 </div>
                 <ToggleThemeButton styleClass="toggle-theme-button text-align-end" />
             </div>

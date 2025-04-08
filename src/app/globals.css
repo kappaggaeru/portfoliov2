@@ -111,7 +111,16 @@ p {
 .toggle-theme-button span:first-of-type::first-letter {
     text-transform: capitalize;
 }
+
 .toggle-theme-button span:last-of-type {
+    text-transform: capitalize;
+}
+
+.menu-button span {
+    text-transform: uppercase;
+}
+
+.contact-mail span:first-of-type{
     text-transform: capitalize;
 }
 
@@ -408,6 +417,7 @@ hr {
 
 .title-section {
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .main-container {

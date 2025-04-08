@@ -1,9 +1,11 @@
-
+"use client";
 import { ActionButtonProps } from "@/app/models/button-custom-model";
 import { Experience } from "@/app/models/experience-model";
 import ActionButtonComponent from "../buttons/action-button-component";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 export default function ExperienceCardComponent({ experience }: { experience: Experience }) {
+    const { t } = useLanguage();
 
     const paragraphs = experience.responsabilities.map((experience, index) =>
         <p key={index}>
@@ -35,14 +37,14 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
                 </div>
                 <div className="experience-grid-table mar-top-1">
                     <div className="experience-table">
-                        <p>Position</p>
+                        <p>{t.positionLabel}</p>
                         <p>{experience.position}</p>
-                        <p>Location</p>
+                        <p>{t.locationLabel}</p>
                         <p>{experience.location}</p>
-                        <p>Industry</p>
+                        <p>{t.industryLabel}</p>
                         <p>{experience.industry}</p>
                         {
-                            experience.website && <p>Website</p>
+                            experience.website && <p>{t.websiteLabel}</p>
                         }
                         {
                             experience.website &&

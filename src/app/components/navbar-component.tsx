@@ -41,8 +41,8 @@ export default function NavbarComponent() {
                 <div className="navbar-links-container">
                     {navbarLinks}
                 </div>
-                <div onClick={toggleMenu} className="navbar-menu-button">
-                    <ActionButtonComponent firstText={"MENU"} />
+                <div onClick={toggleMenu} className="navbar-menu-button menu-button">
+                    <ActionButtonComponent firstText={"menu"} />
                 </div>
             </div>
             <div className={showMenu ? "d-block" : "d-none"}>
