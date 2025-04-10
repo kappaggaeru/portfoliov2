@@ -13,20 +13,17 @@ export default function FooterComponent() {
             <div className="footer-grid">
                 <div className="footer-title-container">
                     <h4>{t.collaborate}</h4>
-                    <a className="contact-link-footer">
+                    <a className="contact-link-footer" href={"mailto:" + t.mail + "?subject=" + t.subjectMail}>
                         <ActionButtonComponent firstText={t.mail} />
                     </a>
                 </div>
                 <div className="footer-subtitle-container">
                     <div className="footer-links-container">
-                        <a href="">
+                        <a href="https://github.com/kappaggaeru" target="blank">
                             <ActionButtonComponent firstText={"GitHub"} icon={arrowIcon} />
                         </a>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/kappaggaeru/" target="blank">
                             <ActionButtonComponent firstText={"LinkedIn"} icon={arrowIcon} />
-                        </a>
-                        <a href="">
-                            <ActionButtonComponent firstText={"Medium"} icon={arrowIcon} />
                         </a>
                     </div>
                     <p>© LAUTARO OLIVERA 2025</p>

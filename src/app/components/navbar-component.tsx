@@ -10,17 +10,24 @@ export default function NavbarComponent() {
     const { showMenu, toggleMenu } = useMenu();
     const { t } = useLanguage();
 
-    const links = [
+    const labels = [
         t.about,
         t.experience,
         t.projects,
         t.contact
     ];
 
-    const navbarLinks = links.map((link, index) =>
-        <a href={`#${link}`} key={index}>
-            <button>
-                {link}
+    const links = [
+        'about',
+        'experience',
+        'projects',
+        'contact'
+    ]
+
+    const navbarLinks = labels.map((label, index) =>
+        <a href={`#${links[index]}`} key={index}>
+            <button className="navbar-link">
+                {label}
             </button>
         </a>
     );

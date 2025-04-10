@@ -28,8 +28,8 @@ export default function AboutComponent() {
 
     const role =
         <div>
-            <p>{ t.role1 }</p>
-            <p>{ t.role2 }</p>
+            <p>{t.role1}</p>
+            <p>{t.role2}</p>
         </div>
 
     return (
@@ -49,10 +49,14 @@ export default function AboutComponent() {
                     <div className="grid-links">
                         <div className="role-link-container">{role}</div>
                         <div className="contact-link-container contact-mail">
-                            <ActionButtonComponent firstText={t.hello} secondText={t.mail} />
+                            <a href={"mailto:" + t.mail + "?subject=" + t.subjectMail}>
+                                <ActionButtonComponent firstText={t.hello} secondText={t.mail} />
+                            </a>
                         </div>
                         <div className="explore-link-container">
-                            <ActionButtonComponent {...props} />
+                            <a href="https://www.linkedin.com/in/kappaggaeru/" target="blank">
+                                <ActionButtonComponent {...props} />
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -49,7 +49,7 @@ export default function ExperienceCardComponent({ experience }: { experience: Ex
                         {
                             experience.website &&
                             <p>
-                                <a href={experience.website}>
+                                <a href={"https://" + experience.website} target="blank">
                                     <ActionButtonComponent {...props} />
                                 </a>
                             </p>

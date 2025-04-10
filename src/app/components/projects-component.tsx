@@ -24,8 +24,7 @@ export default function ProjectsComponent() {
             t.projectP1,
             t.projectP2,
             t.projectP3
-        ],
-        website: 'www.savings.lol'
+        ]
     }
 
     return (

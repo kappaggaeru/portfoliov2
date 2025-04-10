@@ -20,7 +20,7 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
     );
 
     const props: ActionButtonProps = {
-        firstText: project.website,
+        firstText: project.website ?? '',
         icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
     }
 
@@ -75,9 +75,12 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
                 </div>
             </div>
             <div className="project-grid-link">
-                <a href={project.website}>
-                    <ActionButtonComponent {...props} />
-                </a>
+                {
+                    project.website &&
+                    <a href={project.website}>
+                        <ActionButtonComponent {...props} />
+                    </a>
+                }
             </div>
         </div>
     );
