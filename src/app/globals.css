@@ -493,7 +493,7 @@ hr {
 
 .explore-link-container {
     grid-column: span 3;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
 }
 
 
@@ -508,7 +508,7 @@ hr {
     grid-template-rows: auto auto;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
-    column-gap: 4rem;
+    column-gap: normal;
     font-weight: var(--title-weight);
 }
 
@@ -601,7 +601,7 @@ hr {
 }
 
 .contact-link-footer {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .footer-title-container {
@@ -920,6 +920,10 @@ hr {
 
     .project-grid-gallery {
         grid-column: 4 / span 5;
+    }
+
+    .experience-table {
+        column-gap: 4rem;
     }
 
     /* Footer */
