@@ -1,41 +1,48 @@
 import { createContext, useState, useContext, useEffect, ReactNode } from "react";
 
-// Definir la interfaz del contexto
 interface ThemeContextType {
     theme: string;
     toggleTheme: () => void;
 }
 
-// Crear el contexto con un valor inicial vacío para evitar errores
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// Proveedor del contexto
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     const [theme, setTheme] = useState("light");
 
     useEffect(() => {
+        if (typeof window === 'undefined') return;
+
         const storedTheme = localStorage.getItem("theme") || "light";
         setTheme(storedTheme);
-
-        // Aplicar la clase al <html>
         document.documentElement.classList.add(storedTheme);
         document.documentElement.classList.remove(storedTheme === "light" ? "dark" : "light");
+
+        const themeColor = document.querySelector('meta[name="theme-color"]');
+        if (themeColor) {
+            themeColor.setAttribute("content", storedTheme === "light" ? "#FFFFFF" : "#242126");
+        }
     }, []);
 
     const toggleTheme = () => {
         const newTheme = theme === "light" ? "dark" : "light";
+        const oldTheme = theme;
+
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme);
-
-        // Cambiar la clase en el <html>
         document.documentElement.classList.add(newTheme);
-        document.documentElement.classList.remove(theme);
+        document.documentElement.classList.remove(oldTheme);
+
+        const themeColor = document.querySelector('meta[name="theme-color"]');
+        if (themeColor) {
+            themeColor.setAttribute("content", newTheme === "light" ? "#FFFFFF" : "#242126");
+        }
     };
 
     return (
-        <ThemeContext value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
             {children}
-        </ThemeContext>
+        </ThemeContext.Provider>
     );
 };
 
