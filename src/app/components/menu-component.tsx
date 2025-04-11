@@ -23,9 +23,16 @@ export default function MenuComponent() {
         t.contact
     ];
 
+    const links = [
+        'about',
+        'experience',
+        'projects',
+        'contact'
+    ]
+
     const listLabels = labels.map((label, index) =>
         <li key={index}>
-            <a href={`#${label}`} className="a-navbar" onClick={toggleMenu}>
+            <a href={`#${links[index]}`} className="a-navbar" onClick={toggleMenu}>
                 {label}
             </a>
         </li>
