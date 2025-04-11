@@ -84,7 +84,15 @@ button {
     background: lightskyblue;
 }
 
+.language-fixed-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+}
+
 a,
+a:visited,
 span,
 p {
     font-family: "Inter", Helvetica, Arial, sans-serif;
@@ -120,7 +128,7 @@ p {
     text-transform: uppercase;
 }
 
-.contact-mail span:first-of-type{
+.contact-mail span:first-of-type {
     text-transform: capitalize;
 }
 
@@ -161,6 +169,10 @@ h4 {
 
 .navbar-contact-container {
     display: none;
+}
+
+.navbar-link {
+    cursor: pointer;
 }
 
 .navbar-theme-container {
@@ -710,11 +722,17 @@ hr {
         grid-column: span 3;
         grid-row: span 2;
         align-content: end;
+        margin-top: 0;
     }
 
     .role-link-container {
         grid-column: span 6;
         grid-row: span 1;
+    }
+
+    .explore-link-container {
+        grid-column: span 2;
+        grid-row: 3 / span 1;
     }
 
     /* Experience */

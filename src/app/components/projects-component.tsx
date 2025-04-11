@@ -16,6 +16,10 @@ export default function ProjectsComponent() {
         year: t.projectYear,
         images: [
             {
+                src: '/assets/images/pokedex-portfolio.png',
+                alt: t.projectImageAlt
+            },
+            {
                 src: '/assets/images/andrey-project-1.png',
                 alt: t.projectImageAlt
             }
