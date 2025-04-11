@@ -377,6 +377,10 @@ hr {
     max-width: 24rem;
 }
 
+.explore-linkedin-button {
+    align-items: end;
+}
+
 .d-block {
     display: block;
 }

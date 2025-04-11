@@ -18,10 +18,6 @@ export default function ProjectsComponent() {
             {
                 src: '/assets/images/pokedex-portfolio.png',
                 alt: t.projectImageAlt
-            },
-            {
-                src: '/assets/images/andrey-project-1.png',
-                alt: t.projectImageAlt
             }
         ],
         paragraphs: [

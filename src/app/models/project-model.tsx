@@ -5,7 +5,7 @@ export interface Project {
     year: string;
     images: Image [];
     paragraphs: string [];
-    website: string;
+    website?: string;
 }
 
 export interface Image {

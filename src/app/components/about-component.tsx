@@ -8,7 +8,8 @@ export default function AboutComponent() {
 
     const props: ActionButtonProps = {
         firstText: t.linkedin,
-        icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+        icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z",
+        styleClass: "explore-linkedin-button"
     }
 
 
@@ -38,7 +39,7 @@ export default function AboutComponent() {
             <hr className="mar-bot" />
             <div className="about-grid-container">
                 <div className="about-grid-title">
-                    <h4 className="mar-bot grid-about-title">{title}</h4>
+                    <h4 className="grid-about-title">{title}</h4>
                 </div>
                 <div className="about-grid-text">
                     <section className="paragraphs-container grid-about-paragraph">
