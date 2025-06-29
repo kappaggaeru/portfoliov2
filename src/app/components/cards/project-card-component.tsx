@@ -3,8 +3,10 @@ import { Project } from "@/app/models/project-model";
 import ActionButtonComponent from "../buttons/action-button-component";
 import { ActionButtonProps } from "@/app/models/button-custom-model";
 import ImageCarousel from "../carousel-component";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 export default function ProjectCardComponent({ project }: { project: Project }) {
+    const { t } = useLanguage();
 
     const skillsParagraphs = project.skills.map((skill, index) =>
         <span key={index}>
@@ -14,13 +16,11 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
     );
 
     const paragraphs = project.paragraphs.map((experience, index) =>
-        <p key={index}>
-            {experience}
-        </p>
+        <p key={index} dangerouslySetInnerHTML={{ __html: experience }} />
     );
 
     const props: ActionButtonProps = {
-        firstText: project.website ?? '',
+        firstText: t.websiteLabel,
         icon: "M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
     }
 
@@ -42,7 +42,7 @@ export default function ProjectCardComponent({ project }: { project: Project }) 
             <div className="project-grid-link">
                 {
                     project.website &&
-                    <a href={project.website}>
+                    <a href={project.website} target="_blank">
                         <ActionButtonComponent {...props} />
                     </a>
                 }

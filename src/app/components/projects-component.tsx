@@ -7,23 +7,57 @@ export default function ProjectsComponent() {
     const { t } = useLanguage();
 
     const projectCompound: Project = {
-        title: t.projectTitle,
+        title: t.project1Title,
         skills: [
-            t.projectSkill1,
-            t.projectSkill2,
-            t.projectSkill3,
+            t.project1Skill1,
+            t.project1Skill2,
+            t.project1Skill3,
         ],
-        year: t.projectYear,
+        year: t.project1Year,
         images: [
             {
-                src: '/assets/images/pokedex-portfolio.png',
-                alt: t.projectImageAlt
+                src: '/assets/images/pokedex1-portfolio.png',
+                alt: t.project1ImageAlt
+            },
+            {
+                src: '/assets/images/pokedex2-portfolio.png',
+                alt: t.project1ImageAlt
+            },
+            {
+                src: '/assets/images/pokedex3-portfolio.png',
+                alt: t.project1ImageAlt
+            },
+            {
+                src: '/assets/images/pokedex4-portfolio.png',
+                alt: t.project1ImageAlt
+            },
+        ],
+        paragraphs: [
+            t.project1P1,
+            t.project1P2,
+            t.project1P3
+        ],
+        website: "https://pokedex-one-beta-60.vercel.app/"
+    }
+
+    const projectReplicant: Project = {
+        title: t.project2Title,
+        skills: [
+            t.project2Skill1,
+            t.project2Skill2,
+            t.project2Skill3,
+        ],
+        year: t.project2Year,
+        images: [
+            {
+                src: '/assets/images/areYouAReplicant-portfolio.png',
+                alt: t.project2ImageAlt
             }
         ],
         paragraphs: [
-            t.projectP1,
-            t.projectP2,
-            t.projectP3
+            t.project2P1,
+            t.project2P2,
+            t.project2P3
         ]
     }
 
@@ -33,6 +67,7 @@ export default function ProjectsComponent() {
             <hr className="mar-bot" />
             <div className="projects-cards-container">
                 <ProjectCardComponent project={projectCompound} />
+                <ProjectCardComponent project={projectReplicant} />
             </div>
         </section>
     );
